@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { Send } from 'lucide-react';
+// import { Send } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
@@ -76,7 +76,7 @@ export default function Contact() {
               className="w-full bg-teal-500 text-white px-6 py-3 rounded-md hover:bg-teal-600 transition-colors flex items-center justify-center gap-2"
             >
               Send Message
-              <Send className="w-4 h-4" />
+              {/* <Send className="w-4 h-4" /> */}
             </button>
           </form>
         </div>
