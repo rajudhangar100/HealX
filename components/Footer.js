@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Instagram, Mail } from "lucide-react";
+// import { Facebook, Twitter, Instagram, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -36,10 +36,10 @@ export default function Footer() {
               Connect With Us
             </h3>
             <div className="flex space-x-4">
-              <Facebook className="w-5 h-5 lg:w-6 lg:h-6 text-teal-100 hover:text-white cursor-pointer" />
+              {/* <Facebook className="w-5 h-5 lg:w-6 lg:h-6 text-teal-100 hover:text-white cursor-pointer" />
               <Twitter className="w-5 h-5 lg:w-6 lg:h-6 text-teal-100 hover:text-white cursor-pointer" />
               <Instagram className="w-5 h-5 lg:w-6 lg:h-6 text-teal-100 hover:text-white cursor-pointer" />
-              <Mail className="w-5 h-5 lg:w-6 lg:h-6 text-teal-100 hover:text-white cursor-pointer" />
+              <Mail className="w-5 h-5 lg:w-6 lg:h-6 text-teal-100 hover:text-white cursor-pointer" /> */}
             </div>
           </div>
         </div>

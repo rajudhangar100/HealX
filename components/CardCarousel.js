@@ -1,5 +1,5 @@
 import { useRouter } from 'next/navigation';
-import { ArrowRight } from 'lucide-react';
+// import { ArrowRight } from 'lucide-react';
 
 const cards = [
   {
@@ -32,7 +32,7 @@ const Card = ({ source, title, description, onClick }) => {
         className="mt-4 bg-teal-500 text-white px-6 py-2 rounded-full hover:bg-teal-600 transition-colors flex items-center justify-center gap-2"
       >
         Learn More
-        <ArrowRight className="w-4 h-4" />
+        {/* <ArrowRight className="w-4 h-4" /> */}
       </button>
     </div>
   );
