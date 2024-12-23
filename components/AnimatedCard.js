@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-// import { ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 
 export default function AnimatedCard({ title, description, isVisible }) {
@@ -31,7 +31,7 @@ export default function AnimatedCard({ title, description, isVisible }) {
         className="mt-4 bg-teal-500 text-white px-6 py-2 rounded-full hover:bg-teal-600 transition-colors flex items-center gap-2"
       >
         Learn More
-        {/* <ArrowRight className="w-4 h-4" /> */}
+        <ArrowRight className="w-4 h-4" />
       </motion.button>
     </motion.div>
   );

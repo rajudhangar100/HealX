@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import { motion } from 'framer-motion';
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 const NavLink = ({ to, children, onClick }) => (
   <div
@@ -15,28 +15,32 @@ const NavLink = ({ to, children, onClick }) => (
 
 export default function Navbar() {
   const scrollToAbout = () => {
-    const aboutSection = document.getElementById('about');
-    aboutSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const aboutSection = document.getElementById("about");
+    aboutSection?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   return (
     <nav className="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <Link href="/">
-            <img 
-              src="logo.png"
-              alt="HealX Logo"
-              className="h-10 hover:scale-105 transition-transform ml-5"
-            />
+          <img
+            src="logo.png"
+            alt="HealX Logo"
+            className="h-8 lg:h-10 hover:scale-105 transition-transform ml-2"
+          />
         </Link>
-        <div className="flex gap-8 mr-5">
+        <div className="hidden lg:flex gap-8">
           <Link href="/">
-              <NavLink>Home</NavLink>
+            <NavLink>Home</NavLink>
           </Link>
           <NavLink onClick={scrollToAbout}>About Us</NavLink>
           <Link href="/contact">
-              <NavLink>Contact Us</NavLink>
+            <NavLink>Contact Us</NavLink>
           </Link>
+        </div>
+        {/* Mobile Hamburger Menu */}
+        <div className="block lg:hidden">
+          <button className="text-teal-600 hover:text-teal-800">☰</button>
         </div>
       </div>
     </nav>

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 export default function TypewriterText() {
-  const words = ['Assistance', 'Support', 'Guidance', 'Care'];
+  const words = ['Assistance', 'Calorie Log', 'Guidance', 'Diagnose'];
   const [currentWord, setCurrentWord] = useState('');
   const [wordIndex, setWordIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
