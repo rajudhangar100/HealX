@@ -21,7 +21,7 @@ export default function TrackCalories() {
 
     try {
       const ans = await axios.post(
-        'http://172.17.6.160:8000/chat/',
+        'https://groq-hm8v.vercel.app/chat/',
         {
           message: `The user has entered the food item: "${food}". Please provide the calorie information for this food in a single line format, like: "The food item [food name] contains approximately [calories] calories." If the food item is not recognized, respond with: "Sorry, the food item is not in our database."`,
         },
