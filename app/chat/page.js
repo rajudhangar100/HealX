@@ -35,7 +35,7 @@ export default function Chat() {
         'https://groq-hm8v.vercel.app/chat/',
         {
           message: `The user has entered the following symptoms: "${formattedMessage}". Please identify the disease related to these symptoms. If the symptoms do not match any disease, respond with: "Sorry, the provided symptoms are not clear for disease identification."
-          and if you identify the diseases related to the symptom then Your response must be like this "[disease1,disease2,disease3,disease4,...]", Your Response should just have this array of diseases not a single character other than that`,
+          and if you identify the diseases related to the symptom then Your response must be like this "[disease1,disease2,disease3,disease4,...]" and also tell me the cure based on the disease identified don't give medicinal cure tell general cure, Your Response should just have this array of diseases not a single character other than that`,
         },
         { headers: { 'Content-Type': 'application/json' } }
       );
